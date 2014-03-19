@@ -1,0 +1,429 @@
+
+
+/* ------------------------------ */
+/* MAIN LAYOUT/ELEMENTS
+/* ------------------------------ */
+
+body{ color:#3c3c3c; font-size:62.5%; background:url(../images/tile_bg.png) center 0; font-family:'helvc'}
+.width > .inner{ max-width:960px; margin:0 auto; position:relative }
+
+#main > .inner{ padding-top:37px}
+#content{ padding:0 0 70px}
+.content_two #content,
+.content_two.content_three #content_two{ padding-bottom:25px}
+#content_two, #content_three{ padding:25px 0}
+#content_two{ background:rgba(224,224,224,0.4)}
+.content_two #content_two,
+#content_three{ padding-bottom:70px}
+
+.one-sidebar.sidebar-first #content{ float:right; width:62%; }
+.one-sidebar.sidebar-first .region-sidebar-first{ float:left; width:37%; margin-top:5px }
+.one-sidebar.sidebar-second #content{ float:left; width:52%}
+.one-sidebar.sidebar-second .region-sidebar-second{ padding-top:5px; float:right; max-width:420px; width:43.75%; margin-bottom:85px}
+
+.grid{ float:left; margin-bottom:30px}
+.grid-third .row:last-child .grid{ margin-bottom:0}
+.grid-third .grid{ width:33.33%}
+.grid-third .grid:nth-of-type(3n+1) > .inner{ margin-right:44px}
+.grid-third .grid:nth-of-type(3n+2) > .inner{ margin:0 22px}
+.grid-third .grid:nth-of-type(3n+3) > .inner{ margin-left:44px}
+
+
+/* ------------------------------ */
+/* HEADER
+/* ------------------------------ */
+
+#header-bar{ line-height:40px; height:40px; background:#000; position:relative; z-index:10}
+#login_toggle, #language_toggle, #header-bar .icon{ float:left}
+#login_toggle, #header-bar .account{ margin-right:30px;} 
+#header-bar a.icon{ color:#fff}
+#header-bar a.icon:hover{ color:#3f9cda}
+
+.page-user #login_toggle{ display:none}
+#language_toggle ul, #language_toggle li{ margin:0; padding:0; list-style:none; font-size:1em; line-height:40px}
+#language_toggle ul li a{ font-size:1.8em; text-decoration:none; position:relative; display:block; color:#fff; padding-right:27px; }
+#language_toggle ul li a:hover{ color:#3f9cda}
+#language_toggle ul li a:after{ display:block; content:''; position:absolute; top:0; right:0; background:url(../images/sprite.png); width:18px; height:20px; top:14px; }
+#language_toggle ul li.fr a:after{ background-position:-80px 0; }
+#language_toggle ul li.en a:after{ background-position:-80px -20px; }
+.i18n-en #language_toggle ul li.en,
+.i18n-fr #language_toggle ul li.fr{ display:none}
+
+#search{ width:28.5%; position:absolute; right:0; top:-40px; z-index:11}
+#search .form-type-textfield{ margin-right:33px}
+#search .form-actions{ position:absolute; right:0; top:0}
+#search .container-inline div{ display:block}
+#search .form-item input{ border:none; height:28px; line-height:28px; margin-top:6px}
+#search .form-item input[type="text"]{ width:100%; padding:0 5px; color:#858585; font-size:1.8em; font-family:'helvmc'}
+#search .form-actions input[type="submit"]{ text-indent:-999em; width:32px; height:28px; margin-left:1px; background:url(../images/sprite.png) -100px 0; border-radius:0; padding:0; border:none; margin-top:6px}
+#search .form-actions input[type="submit"]:hover{ background-position:-100px -30px}
+
+.mobile_toggle{ display:none}
+
+#utility-bar{ position:relative; z-index:9}
+#login, #forgot-password{ position:absolute; background:#303030; top:-370px; left:-15px; color:#fff; padding:20px 15px; max-width:250px; opacity:0}
+.i18n-fr #login, .i18n-fr #forgot-password{ max-width:320px}
+.login-open #login,
+.forgot-open #forgot-password{ top:0; opacity:1}
+.login h2{ font-size:2.2em; margin:0 0 15px; line-height:1}
+.login p{ font-family:'helvmc'; font-size:1.5em; line-height:1.3em; margin-bottom:20px}
+.login a:hover{ color:#c81e1e; text-decoration:underline}
+.login .form-item{ margin:0 0 8px}
+.login .form-item.form-type-password,
+#fogot-password .form-item.form-type-textfield{ margin-bottom:15px}
+.login .form-item label{ font-size:1.8em; margin:0 0 8px}
+.login .form-actions input[type="submit"]{ marign-top:7px; color:#fff; border-color:#fff}
+.login .form-actions input[type="submit"]:hover{ border-color:#fff; background:#6f6f6f}
+#login .item-list ul{ float:right; font-size:1.8em; margin:0; padding:0; list-style:none; font-family:'helvbdc'; line-height:1.6em }
+.i18n-fr #login .item-list ul{ font-size:1.6em; padding-top:4px}
+#login .item-list ul li.first{ display:none}
+#login .item-list ul li a{ color:#c8c8c8; text-decoration:none}
+#login .item-list ul li a:hover{ text-decoration:underline}
+#forgot-password{ top:-200px}
+
+#slides{ position:relative}
+#header .inner{ position:relative; min-height:175px}
+#branding{ position:relative}
+#logo{position:absolute; top:34px; }
+#badge{ position:absolute; left:45.3%; top:-47px; width:20.41%; z-index:10}
+#bottles{ background:url(../images/bg_bottles.png); width:87px; height:68px; position:absolute; top:37px; left:69.58% }
+
+.contact-details, .address-details{ font-family:'helvmc'}
+.contact-details p{ font-size:1.55em}
+.contact-details .label{ width:65px; display:inline-block}
+#header .contact-details{ position:absolute; right:0; color:#787878; margin-top:25px}
+
+#header-image{ background:#1e1e1e center 0; background-size:cover; }
+#header-image > .inner{ height:450px; position:relative}
+#header-image h1{ position:absolute; background:#fff; margin:0 0 30px; bottom:0; color:#585858; padding:10px 16px; line-height:1}
+
+
+/* ------------------------------ */
+/* FOOTER
+/* ------------------------------ */
+
+#footer{ padding:20px 0 70px}
+#footer-nav{ margin-bottom:20px}
+#footer .address-details,
+#footer .contact-details{ float:left; color:#3c3c3c}
+#footer .address-details{  background:url(../images/badge_footer.png) 0 0 no-repeat; padding:45px 0 40px 215px; margin-right:75px}
+#footer .address-details p{ font-size:1.5em; margin:0}
+#footer .contact-details{ padding-top:45px}
+#footer .contact-details .blue,
+#footer .contact-details .blue a{ color:#3c3c3c}
+#footer .contact-details .blue a:hover{ color:#000}
+#back-to-top{ display:none}
+
+
+/* ------------------------------ */
+/* NAVIGATION
+/* ------------------------------ */
+
+#header-nav{position:absolute; bottom:-175px; z-index:8; width:100%}
+.nav .menu-block-wrapper{ text-align:center; position:relative}
+.nav .menu-block-wrapper > ul.menu{ display:table; margin:0 auto}
+.nav .menu-block-wrapper > ul.menu > li{ display:table-cell; float:left}
+
+.nav ul, .nav li{ margin:0; padding:0; list-style:none; }
+.nav ul{ font-size:2.22em; font-family:'helvbc'; line-height:40px }
+.nav ul li{ position:relative}
+.nav .menu-block-wrapper > ul > li:not(:last-child){ margin-right:55px}
+.nav ul li a{ text-decoration:none; display:block; color:#3c3c3c; }
+.nav div > ul > li:hover > a,
+.nav ul li a:hover{ color:#3f9cda}
+
+.nav ul li:hover ul{ display:block; }
+.nav ul li ul{ font-size:1em; display:none; position:absolute; left:-10px; top:100%; background:#303030; width:315px; font-family:'helvbdc'; padding:10px 0 5px; text-align:left; line-height:1.5em}
+.nav ul li ul li{ padding:0 15px 10px; line-height:1; float:none; margin:0; display:block}
+.nav ul li ul li a{ color:#fff; }
+
+.nav ul li ul li ul{ font-size:.8em; padding:0 0 5px; position:static; width:auto;}
+.nav ul li ul li ul li{ padding:0; line-height:1.5em }
+.nav ul li ul li ul li a{ color:#c8c8c8}
+
+.sidebar ul.menu,
+.sidebar ul.menu li{ margin:0; padding:0; list-style:none; }
+.sidebar ul.menu{font-family:'helvbdc'; font-size:2.2em; line-height:1}
+.sidebar ul.menu li{ margin-bottom:20px}
+.sidebar ul.menu li a{ color:#010101; text-decoration:none}
+.sidebar ul.menu li a:hover{ color:#c81e1e}
+.sidebar ul.menu li ul{ font-size:.9em; line-height:1.45; margin-top:4px}
+.sidebar ul.menu li ul li{ margin-bottom:0}
+.sidebar ul.menu li ul li a{ color:#787878}
+
+#logged-in-nav{ bottom:-215px; position:absolute; width:100%; background:#3f9cda; z-index:7}
+#logged-in-nav ul{ line-height:40px}
+#logged-in-nav ul li a{ color:#fff}
+#logged-in-nav div > ul > li:hover > a,
+#logged-in-nav ul li a:hover{ color:#000}
+#logged-in-nav ul li ul{ line-height:1.15; padding-bottom:10px}
+#logged-in-nav .menu-block-wrapper  > ul > li:not(:last-child){ margin-right:105px}
+#logged-in-nav ul li ul li a:hover{ color:#3f9cda}
+
+#header-nav .legal-menu{ display:none}
+#footer .legal-menu ul.menu,
+#footer .legal-menu ul.menu li{ margin:0; padding:0; list-style:none}
+#footer .legal-menu ul.menu{ font-size:1.5em}
+#footer .legal-menu ul.menu li{ float:left; font-size:.7em}
+#footer .legal-menu ul.menu li:first-child{ margin-right:5px}
+#footer .legal-menu ul.menu li a{ color:#3C3C3C}
+#footer .legal-menu ul.menu li a:hover{ color:#000}
+
+
+/* ------------------------------ */
+/* HTML ELEMENTS
+/* ------------------------------ */
+
+/* HEADINGS
+----------------------------------*/
+h1, h2, h3, h4, h5{ font-weight:normal; line-height:1.1em}
+h1{ font-family:'helvc'; font-size:6em; text-transform:uppercase; margin:0 0 20px}
+h2{ font-family:'helvbdc'; font-size:3em; margin:0 0 15px;}
+h3{ font-family:'helvbdc'; font-size:2em; margin:0 0 15px}
+h4, h5{ font-family:'helvc'; font-size:1.8em; margin:0 0 8px}
+
+
+/* TEXT
+----------------------------------*/
+p, ul, ol{ line-height:1.5em; font-size:2em; margin:0 0 30px; padding:0;} 
+p:last-child, ul:last-child, ol:last-child{ margin-bottom:0}
+ul, ol{ margin-left:1em; padding:0; }
+ul{ list-style:disc; }
+ul li, ol li{ padding-left:5px; padding-bottom:10px; }
+ul p, ol p,
+ul ul,
+ol ol{ font-size:1em; }
+ul ul{ list-style:none;}
+strong{ font-weight:normal; font-family:'helvbdc'}
+
+
+/* LINKS
+----------------------------------*/
+a{ color:#3f9cda; outline:none; text-decoration:none}
+a:active{ outline:none}
+a:link{ outline:none}
+a:hover{ color:#005b9a; }
+img{ vertical-align:middle}
+
+
+/* FORMS
+----------------------------------*/
+input, textarea, select{ font-size:1.5em; border-radius:0}
+.form-item{ margin:0 0 15px}
+.form-item label{ margin:0 0 5px; font-size:2em; font-family:'helvbdc'; line-height:1; font-weight:normal}
+.form-item input[type="text"],
+.form-item input[type="password"]{ width:100%; border:none; padding:3px 5px}
+.form-actions input[type="submit"]{ font-family:'helvbdc'; background:none; border:2px solid #a32439; border-radius:5px; padding:2px 15px; font-size:1.8em; cursor:pointer; color:#a32439; }
+#main .form-item input[type="text"], 
+#main .form-item input[type="password"]{ border:1px solid #3C3C3C}
+#main fieldset{ border:none}
+
+
+/* CLASSES
+----------------------------------*/
+.mice-type{ font-size:.7em}
+.blue{ color:#3f9cda}
+.blue-bg{ background:#edd3d3; background:rgba(0,91,153,.2); }
+.load.loading{ background:url(../images/loading.gif) center center no-repeat; height:15px}
+.posted{ font-family:'helvbdc'; font-size:2em; margin:0 0 15px; line-height:1.1em}
+.mimetype{ text-transform:uppercase}
+
+.transition{ -webkit-transition: all .4s ease-in-out; -moz-transition: all .4s ease-in-out; -ms-transition: all .4s ease-in-out; -o-transition: all .4s ease-in-out; transition: all .4s ease-in-out;}
+
+
+/* DRUPAL OVERRIDES
+----------------------------------*/
+#admin-menu .dropdown li{ font-size:9px; line-height:1}
+div.messages{ font-size:1.4em}
+div.messages p,
+div.messages ul{ font-size:1.4em}
+div.messages ul.krumo-node{ font-size:12px}
+
+ul.tabs-primary{ position:absolute; top:10px; left:0; margin:0; padding:0; font-size:1.2em; background:none;}
+ul.tabs-primary li{ margin:0; padding:0 1px 0 0; border:none; background:none; text-shadow:none; border-radius:0; list-style:none; float:left}
+ul.tabs-primary li a{ border:none; background:#000; color:#fff; text-transform:uppercase; letter-spacing:0; border-radius:0; padding:2px 5px; text-decoration:none }
+ul.tabs-primary li a:hover{ opacity:0.6}
+
+#main #user-register-form .form-text,
+#main #user-login .form-text,
+#main #user-pass .form-text{ max-width:280px}
+
+ol.search-results,
+ol.search-results li{ margin-left:0; padding-left:0}
+
+
+/* ------------------------------ */
+/* PAGE ELEMENTS
+/* ------------------------------ */
+
+.field .field-label{ font-weight:normal}
+
+/* DOWNLOADS
+----------------------------------*/
+.field-name-field-downloads{ margin-top:30px}
+.field-name-field-downloads ul, .field-name-field-downloads li{ margin:0; padding:0; list-style:none; font-size:1em}
+.field-name-field-downloads li:not(:last-child){ margin-bottom:30px}
+
+
+/* BUTTONS
+----------------------------------*/
+a.btn{ font-family:'helvbdc'; background:none; border:2px solid #005b9a; border-radius:5px; padding:2px 15px; font-size:1.8em; cursor:pointer; color:#005b9a;}
+a.btn:hover{ color:#005b9a; border-color:#005b9a; text-decoration:none}
+p a.btn{ font-size:.9em}
+p.btn{ margin-top:30px}
+
+a.icon{ font-size:1.8em; text-decoration:none; position:relative; display:block; cursor:pointer}
+a.icon:after{ display:block; content:''; position:absolute; top:0; right:0; background:url(../images/sprite.png); cursor:pointer}
+a.icon.menu{ padding-right:24px}
+a.icon.menu:after{ width:14px; height:13px; background-position:-140px 0; top:13px}
+a.icon.menu.close:after{ background-position:-140px -40px; width:15px; height:15px}
+a.icon.login{ padding-right:27px}
+a.icon.login:after{ width:17px; height:16px; top:12px; background-position:-40px 0}
+a.icon.login:hover:after{ background-position:-40px -20px}
+a.icon.logout{ padding-right:27px}
+a.icon.logout:after{ width:20px; height:16px; top:12px; background-position:-40px -40px}
+a.icon.logout:hover:after{ background-position:-60px -40px}
+a.icon.account{ padding-right:22px}
+a.icon.account:after{ width:15px; height:16px; top:12px; background-position:-60px 0}
+a.icon.account:hover:after{ background-position:-60px -20px}
+a.icon.closex{ position:absolute; right:15px; top:25px}
+a.icon.closex:after{ background-position:-140px -40px; width:15px; height:15px;}
+
+a.download{ font-family:'helvbc'; font-size:2.4em; min-height:53px; position:relative; display:block; padding-left:60px; line-height:1.2em}
+a.download:before{ content:''; display:block; position:absolute; width:40px; height:53px; background:url(../images/sprite.png); left:0; top:5px}
+
+
+/* SEARCH
+----------------------------------*/
+#main #search-form{ margin-bottom:30px}
+#main #search-form input[type="text"]{ max-width:400px}
+#main #search-form input[type="submit"]{ font-family:'helvbdc'; background:none; border:2px solid #a32439; border-radius:5px; padding:2px 15px; font-size:1.8em; cursor:pointer; color:#a32439;}
+#main #search-form input[type="submit"]:hover{ color:#4f121c; border-color:#4f121c; text-decoration:none}
+#main #search-form .container-inline div, 
+#main #search-form .container-inline label{ display:block}
+.search-info{ display:none}
+p.search-snippet{ margin:0}
+
+
+/* REGISTER
+----------------------------------*/
+#user-register-form input[type="text"]{ max-width:400px}
+.form-item .description{ font-size:2em; margin:10px 0 20px}
+
+
+/* MY ACCOUNT
+----------------------------------*/
+#user-profile-form input[type="text"],
+#user-profile-form input[type="password"],
+#user-profile-form .confirm-parent, 
+#user-profile-form .password-parent{ max-width:400px; width:100%}
+#user-profile-form .description{ margin:10px 0 20px}
+#user-profile-form .password-strength{ font-size:1.5em; margin:0; width:200px}
+#user-profile-form .form-item .password-suggestions.description{ font-size:2em}
+#user-profile-form .form-item .password-suggestions.description ul{ font-size:1em}
+#user-profile-form legend{ font-size:2em; font-family:'helvbdc'}
+#user-profile-form .form-item-language.form-type-radios > label{ display:none}
+#user-profile-form .form-item-language label{ font-family:'helvc'}
+#user-profile-form #edit-actions{ margin-top:20px}
+#user-profile-form div.form-item div.password-suggestions{ border:none; padding:15px; background:rgba(224, 224, 224, 0.4)}
+#user-profile-form div.form-item div.password-suggestions li{ padding:0; margin:0}
+
+
+/* ------------------------------ */
+/* CONTENT TYPES/VIEWS
+/* ------------------------------ */
+
+
+/* GLOBAL STYLES
+----------------------------------*/
+.node{ position:relative}
+.views-row{ position:relative; }
+
+.views-field-edit-node a{ position:absolute; right:1px; top:1px; font-size:1.1em; text-transform:uppercase; display:inline-block; padding:4px 8px; text-decoration:none; z-index:2; line-height:1; color:#fff; background:#000; display:inline; height:auto }
+.views-field-edit-node a:hover{ opacity:0.6}
+
+.view-link-list h2{ font-family:'helvbc'; font-size:2.4em}
+
+.view-list{ margin-top:25px}
+.view-list h4,
+.node-distributor h4,
+.node-staff-member h4{ margin-top:20px}
+
+.tabledrag-toggle-weight-wrapper{ display:none}
+table.draggable{ margin:10px 0; font-size:2em}
+
+
+/* FRONT
+----------------------------------*/
+.front #content{ padding-bottom:0}
+.front #header-image h1{ position:static; float:left; margin:180px 0 0; font-size:4em}
+.front #header-image h2{ float:none; clear:left; margin:0; background:#000; color:#fff; font-size:2.6em; font-family:'helvc'; padding:12px 16px; max-width:470px; line-height:1.2; text-transform:uppercase}
+
+
+/* NEWS
+----------------------------------*/
+/* LISTING */
+.view-news .views-row{ margin-bottom:40px}
+.view-news h2{ margin-bottom:8px}
+/* HOME */
+.view-news.view-display-id-home .views-row{ margin-bottom:50px}
+.view-news.view-display-id-home .views-row .inner{ position:relative}
+.view-news.view-display-id-home .views-row .inner:after{ content:''; display:block; position:absolute; left:170px; bottom:-20px; width:70px; height:55px; background:url(../images/bg_bottles.png); background-size:100% auto; opacity:0.3}
+
+
+/* TESTIMONIALS
+----------------------------------*/
+.view-testimonials .views-row:not(.views-row-last){ border-bottom:1px solid #000; padding-bottom:25px; margin-bottom:25px}
+.node-testimonial h3{ margin-bottom:5px}
+.node-testimonial .field-name-body{ margin-bottom:15px}
+.node-testimonial .field-name-field-company p{ line-height:1.25em; margin:0}
+
+
+/* CAREERS
+----------------------------------*/
+.node-career h2{ margin:0 0 10px 0}
+.node-career.view-mode-full h2{ margin-right:170px}
+.node-career a.top{ position:absolute; right:0; top:5px}
+
+
+/* DISTRIBUTORS
+----------------------------------*/
+.node-distributor h3{ margin-bottom:0}
+.node-distributor .field-name-body p:last-child{ margin-bottom:10px}
+.node-distributor .field-name-field-located-in .field-items{ font-family:'helvbdc'}
+
+
+/* CONTACT
+----------------------------------*/
+.node-36 .field-name-body ul,
+.node-36 .field-name-body ul li{ padding:0; margin:0; list-style:none}
+
+#block-views-contact-order-industrial h2,
+#block-views-contact-order-horticulture h2{ font-size:2em; margin:30px 0 0}
+
+.node-staff-member h3{ font-size:2em; margin-bottom:5px}
+.node-staff-member .field-name-field-position,
+.node-staff-member .field-name-field-email{ font-size:2em}
+.node-staff-member .field-name-field-email{ margin:5px 0 0}
+.node-staff-member .field-name-body ul,
+.node-staff-member .field-name-body ul li{ margin:0; padding:0; list-style:none; line-height:1.2em}
+.node-staff-member .field-name-body ul li{ font-family:'helvbdc'}
+.node-staff-member .field-name-body ul ul li{ font-family:'helvc'; margin-left:20px}
+
+
+
+/* CLIENT AREA DOWNLOAD
+----------------------------------*/
+.field-name-field-downloads-private ul,
+.field-name-field-downloads-private ul li{  margin:0; padding:0; list-style:none; font-size:1em}
+.node-client-area-download h2{ margin-bottom:20px}
+.node-client-area-download h3{ font-family:'helvbc'; font-size:2.4em; line-height:1; margin-bottom:5px}
+.node-client-area-download .field-name-field-downloads-private .field-item{ min-height:53px; position:relative; padding-left:60px; margin-bottom:25px}
+.node-client-area-download .field-name-field-downloads-private .field-item:before{ content:''; display:block; position:absolute; width:40px; height:53px; background:url(../images/sprite.png); left:0; top:5px}
+.node-client-area-download ul li p{ font-size:2em; margin-bottom:0}
+
+
+/* CLIENT AREA VIDEO
+----------------------------------*/
+.node-client-area-video .fitvids{ margin-top:30px}
+
