@@ -49,6 +49,9 @@ function pacechem_preprocess_html(&$variables, $hook) {
 	if (!empty($variables['page']['content_three'])) {
 		$variables['classes_array'][] = 'content_three';
 	}
+	if (!empty($variables['page']['content_four'])) {
+		$variables['classes_array'][] = 'content_four';
+	}
 
   // The body tag's classes are controlled by the $classes_array variable. To
   // remove a class from $classes_array, use array_diff().

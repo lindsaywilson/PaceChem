@@ -135,11 +135,11 @@
 		if(isset($node) && $node->type == 'news'){ $node = node_load(9); }
 		if(isset($node) && $node->type == 'testimonial'){ $node = node_load(12); }
 		if(isset($node) && $node->type == 'staff_member'){ $node = node_load(36); }
-		if(isset($node) && $node->type == 'distributor'){ $node = node_load(31); }
+		if(isset($node) && $node->type == 'link'){ $node = node_load(12); }
 		if(isset($node) && $node->type == 'client_area_video'){ $node = node_load(29); } 
 		if(strpos(request_uri(), '/procedures') !== FALSE || strpos(request_uri(), '/procedimientos') !== FALSE){
 			$node = node_load(18); }
-		if(strpos(request_uri(), '/industries') !== FALSE || strpos(request_uri(), '/industrias') !== FALSE){
+		if(strpos(request_uri(), '/technical-bulletins') !== FALSE || strpos(request_uri(), '/bulletins-techniques') !== FALSE){
 			$node = node_load(21);}
 		if((strpos(request_uri(), '/search') !== FALSE)){
 			$node = node_load(4);
@@ -206,6 +206,7 @@
 	// Render the content areas to see if there's anything in them
 	$content_two  = render($page['content_two']);
 	$content_three = render($page['content_three']);
+	$content_four = render($page['content_four']);
   ?>
   <?php if($content_two): ?>
   <div id="content_two" class="width">
@@ -219,6 +220,14 @@
   <div id="content_three" class="width">
   <div class="inner clearfix">
   	<?php print render($page['content_three']); ?>
+  </div>
+  </div>
+  <?php endif; ?>
+  
+  <?php if($content_four): ?>
+  <div id="content_four" class="width">
+  <div class="inner clearfix">
+  	<?php print render($page['content_four']); ?>
   </div>
   </div>
   <?php endif; ?>

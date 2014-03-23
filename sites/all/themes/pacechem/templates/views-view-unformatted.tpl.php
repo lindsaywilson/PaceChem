@@ -18,7 +18,7 @@
 			$classes_array[$id] .= ' grid';
 		}
 		break;
-	case 'distributors':
+	case 'links':
 	case 'contact':
 		$classes_array[$id] .= ' grid';
 	break;

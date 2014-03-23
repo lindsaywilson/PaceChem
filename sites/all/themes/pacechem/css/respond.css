@@ -133,7 +133,7 @@
 #language_toggle ul li a{ padding:0; text-indent:-999em }
 #language_toggle ul li a:after{ width:27px; height:18px; top:11px}
 #language_toggle ul li.fr a:after{ background-position:-180px 0; }
-#language_toggle ul li.en a:after{ background-position:-180px -20px; }
+#language_toggle ul li.en a:after{ background-position:-180px -40px; }
 
 #search_toggle{ left:65%}
 #search_toggle a.icon.search{ text-indent:-999em}

@@ -91,6 +91,7 @@ scripts[] = js/script.js
 regions[content]        = Content
 regions[content_two]	= Content Two
 regions[content_three]	= Content Three
+regions[content_four]	= Content Four
 regions[sidebar_first]  = First sidebar
 regions[sidebar_second] = Second sidebar
 

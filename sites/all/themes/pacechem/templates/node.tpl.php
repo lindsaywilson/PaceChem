@@ -25,10 +25,9 @@
 <article id="<?php print $id; ?>" class="node-<?php print $node->nid; ?> <?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   
   <?php 
-  if($node->type=='news' || 
-  	 $node->type=='testimonial' || 
+  if($node->type=='news' ||  
 	 $node->type=='client_area_download' || 
-	 $node->type=='distributor' || 
+	 $node->type=='link' || 
 	 $node->type=='staff_member' || 
 	($node->type=='career' && $view_mode == 'teaser')
 	){
@@ -36,10 +35,10 @@
   }
   ?>  
   
-  <?php if ($unpublished || isset($uri[2]) && $uri[1] != 'client-area' && $uri[2] != 'client-area' && $node->type != 'news' && $node->type != 'career' && $node->type != 'client_area_download' ): ?>
+  <?php if ($unpublished || isset($uri[2]) && $uri[1] != 'client-area' && $uri[2] != 'client-area' && $node->type != 'news' && $node->type != 'link' && $node->type != 'career' && $node->type != 'client_area_download' ): ?>
     <header>
       
-      <?php if( (isset($uri[2]) && $uri[1] != 'es') || (isset($uri[3]) && $uri[1] == 'es') || isset($uri[4]) || $node->type == 'client_area_video'): ?>
+      <?php if( (isset($uri[2]) && $uri[1] != 'fr') || (isset($uri[3]) && $uri[1] == 'fr') || isset($uri[4]) || $node->type == 'client_area_video'): ?>
       	<h2><?php print $node->title; ?></h2>
       <?php endif; ?>
 
@@ -58,6 +57,7 @@
 			print render($content['title_field']); ?>
 			<p class="posted"><?php print t('Posted ') . date('F jS, Y', $node->created) ?></p>
             <?php print render($content['body']) ?>
+            <?php print render($content['field_downloads']) ?>
             
         <?php else: ?>
         	<h2><a href="/news#<?php print $id; ?>"><?php print $node->title; ?></a></h2>
@@ -72,8 +72,9 @@
     	<a class="btn top" href="/careers">Back to Listings</a>
     <?php print render($content);
 	
-	// DISTRIBUTOR
-	elseif($node->type == 'distributor'): ?>
+	// LINK
+	elseif($node->type == 'link'): ?>
+    <h3><?php print $node->field_heading[$lang][0]['safe_value']; ?></h3>
     <h3><a rel="external" href="<?php print $node->field_website_url['und'][0]['safe_value']; ?>"><?php print $node->title; ?></a></h3>
 	<?php print render($content);
 	
