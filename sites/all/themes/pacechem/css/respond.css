@@ -19,7 +19,7 @@
 /* NAVIGATION
 /* ------------------------------ */
 .nav ul{ font-size:2em}
-.nav .menu-block-wrapper > ul > li:not(:last-child){ margin-right:33px}
+.nav .menu-block-wrapper > ul > li:not(:last-child){ margin-right:55px}
 #logged-in-nav .menu-block-wrapper > ul > li:not(:last-child){ margin-right:75px}
 
 
@@ -43,15 +43,12 @@
 .grid-third .grid:nth-of-type(odd) > .inner{ margin-right:20px}
 
 #header-image > .inner{ height:300px}
-.logged-in #badge{ top:-35px; left:50%}
-
-#footer .address-details{ padding-left:35%; margin-right:5%}
 
 
 /* NAVIGATION
 /* ------------------------------ */
 .nav ul{ font-size:1.8em}
-.nav .menu-block-wrapper > ul > li:not(:last-child){ margin-right:36px}
+.nav .menu-block-wrapper > ul > li:not(:last-child){ margin-right:57px}
 #logged-in-nav .menu-block-wrapper > ul > li:not(:last-child){ margin-right:75px}
 
 
@@ -81,8 +78,13 @@
 
 @media (max-width: 767px) {
 	
-.nav .menu-block-wrapper > ul > li:not(:last-child){ margin-right:9px}
+.nav .menu-block-wrapper > ul > li:not(:last-child){ margin-right:25px}
 #logged-in-nav .menu-block-wrapper > ul > li:not(:last-child){ margin-right:43px}
+
+.logged-in #badge{ top:-15px; left:47%}
+
+#footer .address-details { margin-right: 7%; padding-left: 33%;}
+.i18n-fr #footer .address-details { background-position: -7px 0; margin-right: 2%; padding-left: 30%;}
 	
 }
 
@@ -271,7 +273,7 @@ a.download:before{ top:3px; background-size:225px; width:32px; height:46px}
 #header-image h1{ font-size:3em; }
 
 .i18n-fr #language_toggle{ left:40%}
-.i18n-fr #search_toggle{ left:58%}
+.i18n-fr #search_toggle{ left:55%}
 .i18n-fr.page-user #search_toggle{ left:90%}
 
 .page-user #language_toggle{ left:55%}

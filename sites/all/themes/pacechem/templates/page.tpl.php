@@ -137,7 +137,7 @@
 		if(isset($node) && $node->type == 'staff_member'){ $node = node_load(36); }
 		if(isset($node) && $node->type == 'link'){ $node = node_load(12); }
 		if(isset($node) && $node->type == 'client_area_video'){ $node = node_load(29); } 
-		if(strpos(request_uri(), '/procedures') !== FALSE || strpos(request_uri(), '/procedimientos') !== FALSE){
+		if(strpos(request_uri(), '/procedures') !== FALSE || strpos(request_uri(), 'fr/proc') !== FALSE){
 			$node = node_load(18); }
 		if(strpos(request_uri(), '/technical-bulletins') !== FALSE || strpos(request_uri(), '/bulletins-techniques') !== FALSE){
 			$node = node_load(21);}
