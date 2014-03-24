@@ -402,6 +402,8 @@ table.draggable{ margin:10px 0; font-size:2em}
 .node-36 .field-name-body ul,
 .node-36 .field-name-body ul li{ padding:0; margin:0; list-style:none}
 
+#block-block-3 p{ margin-bottom:5px}
+
 #block-views-contact-order-industrial h2,
 #block-views-contact-order-horticulture h2,
 #block-views-contact-order-water h2{ font-size:2em; margin:30px 0 0}
