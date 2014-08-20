@@ -29,13 +29,14 @@
 	 $node->type=='client_area_download' || 
 	 $node->type=='link' || 
 	 $node->type=='staff_member' || 
+	 $node->type=='industry_partner' || 
 	($node->type=='career' && $view_mode == 'teaser')
 	){
   	include path_to_theme().'/templates/includes/node-edit.inc.php';
   }
   ?>  
   
-  <?php if ($unpublished || isset($uri[2]) && $uri[1] != 'client-area' && $uri[2] != 'client-area' && $node->type != 'news' && $node->type != 'link' && $node->type != 'career' && $node->type != 'client_area_download' ): ?>
+  <?php if ($unpublished || isset($uri[2]) && $uri[1] != 'client-area' && $uri[2] != 'client-area' && $node->type != 'news' && $node->type != 'link' && $node->type != 'career' && $node->type != 'industry_partner' && $node->type != 'client_area_download' ): ?>
     <header>
       
       <?php if( (isset($uri[2]) && $uri[1] != 'fr') || (isset($uri[3]) && $uri[1] == 'fr') || isset($uri[4]) || $node->type == 'client_area_video'): ?>
@@ -71,6 +72,12 @@
 	elseif($node->type == 'career' && $view_mode == 'full') : ?>
     	<a class="btn top" href="/careers">Back to Listings</a>
     <?php print render($content);
+	
+	// INDUSTRY PARTNERS
+	elseif($node->type == 'industry_partner'):?>
+    <a rel="external" class="industry-partner-logo" href="<?php print $node->field_website_url['und'][0]['safe_value']; ?>"><img src="<?php print image_style_url('industry_partners', $node->field_image['und'][0]['uri']) ?>" /></a>
+    <h3><a rel="external" href="<?php print $node->field_website_url['und'][0]['safe_value']; ?>"><?php print $node->title; ?></a></h3>
+	<?php print render($content);
 	
 	// LINK
 	elseif($node->type == 'link'): ?>
