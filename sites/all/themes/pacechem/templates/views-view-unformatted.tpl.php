@@ -21,6 +21,7 @@
 	case 'links':
 	case 'contact':
 	case 'industry_partners':
+	case 'locations':
 		$classes_array[$id] .= ' grid';
 	break;
   }

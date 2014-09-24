@@ -38,6 +38,7 @@ switch($view->name){
 	case 'links':
 	case 'contact':
 	case 'industry_partners':
+	case 'locations':
 		$classes .= ' view-list grid-third';
 	break;
 } 

@@ -384,6 +384,8 @@ table.draggable{ margin:10px 0; font-size:2em}
 
 /* CAREERS
 ----------------------------------*/
+.view-careers .views-row{ margin-top:40px}
+.view-careers  p.btn{ margin-top:10px}
 .node-career h2{ margin:0 0 10px 0}
 .node-career.view-mode-full h2{ margin-right:170px}
 .node-career a.top{ position:absolute; right:0; top:5px}
@@ -411,8 +413,6 @@ a.industry-partner-logo{ display:table-cell; height:124px; vertical-align:bottom
 .node-36 .field-name-body ul,
 .node-36 .field-name-body ul li{ padding:0; margin:0; list-style:none}
 
-#block-block-3 p{ margin-bottom:5px}
-
 #block-views-contact-order-industrial h2,
 #block-views-contact-order-horticulture h2,
 #block-views-contact-order-water h2{ font-size:2em; margin:30px 0 0}
@@ -427,6 +427,11 @@ a.industry-partner-logo{ display:table-cell; height:124px; vertical-align:bottom
 .node-staff-member .field-name-body ul li{ font-family:'helvbdc'}
 .node-staff-member .field-name-body ul ul li{ font-family:'helvc'; margin-left:20px}
 
+
+/* LOCATIONS
+----------------------------------*/
+#block-views-locations-order h2{ font-size:2em; margin:30px 0 0}
+.view-locations p{ margin-bottom:5px}
 
 
 /* CLIENT AREA DOWNLOAD

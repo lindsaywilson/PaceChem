@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Locations Feature feature.
+ */
+
+include_once 'locations_feature.features.inc';

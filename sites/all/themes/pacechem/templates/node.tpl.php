@@ -30,6 +30,7 @@
 	 $node->type=='link' || 
 	 $node->type=='staff_member' || 
 	 $node->type=='industry_partner' || 
+	 $node->type=='location' || 
 	($node->type=='career' && $view_mode == 'teaser')
 	){
   	include path_to_theme().'/templates/includes/node-edit.inc.php';
